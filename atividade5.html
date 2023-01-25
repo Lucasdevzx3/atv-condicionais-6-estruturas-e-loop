@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--
+                    Faça um algoritmo que pergunte a distância que um passageiro
+            deseja percorrer em Km. Calcule o preço da passagem, cobrando
+            R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais
+            longas.
+            
+            let distancia
+            let price por km
+            if distancia > 200 price por km 0.45
+            let preço passagem distancia * price por km
+            log para mostrar resultado
+
+        -->
+    <script>
+      let distance = parseFloat(prompt("Insira a distância desejada em Km:"));
+      let pricePerKm = 0.5;
+
+      if (distance > 200) {
+        pricePerKm = 0.45;
+      }
+
+      let ticketPrice = distance * pricePerKm;
+      console.log("O preço da passagem é R$" + ticketPrice);
+    </script>
+  </body>
+</html>
